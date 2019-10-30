@@ -1,8 +1,15 @@
-
-
+import sys
+import prettytable
+# https://stackoverflow.com/questions/19125237/a-text-table-writer-printer-for-python
+# pip3 install prettytable
 def print_table(albums):
+    headers = ["Artist", "Album", "Release year", "Genre", "Duration"]
+
+    table = prettytable.PrettyTable(headers)
     for album in albums:
-        print(album)
+        table.add_row(album)
+    
+    print(table)
 
 def display_logo():
     print('''

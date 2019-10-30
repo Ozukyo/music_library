@@ -17,8 +17,8 @@ def find_genre(albums):
     genre = input("What genre are you looking for?: ")
     albums_with_genre = []
     for album in albums:
-        if genre == album[3]:
-            albums_with_genre.append(album[1])
+        if genre.lower() == album[3].lower():
+            albums_with_genre.append(album)
     return albums_with_genre
 
 
@@ -26,8 +26,8 @@ def find_name_artist(albums):
     artist = input("Which artist album(s) are you looking for?: ")
     albums_with_artist = []
     for album in albums:
-        if artist == album[0]:
-            albums_with_artist.append(album[1])
+        if artist.lower() == album[0].lower():
+            albums_with_artist.append(album)
     return albums_with_artist
 
 
@@ -35,7 +35,7 @@ def find_album(albums):
     album_name = input("What album are you looking for?: ")
     albums_with_album_name = []
     for album in albums:
-        if album_name == album[1]:
+        if album_name.lower() == album[1].lower():
             albums_with_album_name.append(album)
     return albums_with_album_name
 
