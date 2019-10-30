@@ -21,7 +21,10 @@ def display_menu():
         "2 - to find albums by genre\n"
         "3 - to find all albums created by given artist\n"  
         "4 - to find album by given name\n" 
-        "5 - to find album by time range\n" 
+        "5 - to find album by time range\n"
+        "6 - to find the shortest album\n"
+        "7 - to find the longest album\n"
+        "8 - to add new album\n"
         "0 - to exit\n\n"
         "What's your choice?:")
     return choice
